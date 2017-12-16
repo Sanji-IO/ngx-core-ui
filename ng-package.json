@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "src": "lib",
+  "dest": "dist",
+  "lib": {
+    "entryFile": "lib/src/public_api.ts",
+    "externals": {
+      "stacktrace-js": "StackTrace"
+    }
+  }
+}
