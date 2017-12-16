@@ -8,14 +8,12 @@ import { Session } from '../models/session';
 
 const PRE_FIX = 'sj';
 
-export function tokenGetter() {
-  const sessionData = JSON.parse(localStorage.getItem(`${PRE_FIX}|session`) || '') as Session;
-  return sessionData.token;
-}
-
-export function jwtOptionsFactory() {
+export function jwtOptionsFactory(localStorageService: LocalStorageService) {
   return {
-    tokenGetter
+    tokenGetter: () => {
+      const sessionData = localStorageService.retrieve('session');
+      return sessionData.token;
+    }
   };
 }
 
