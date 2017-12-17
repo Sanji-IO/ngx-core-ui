@@ -9,12 +9,12 @@
     "docs:serve": "npm run docs:build -- -s",
     "docs:watch": "npm run docs:build -- -s -w",
     "ng": "ng",
+    "lint": "tslint --project lib/src/tsconfig.es5.json lib/src/**/*.ts",
     "start": "ng serve",
     "build": "ng-packagr -p ng-package.json",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:ci": "jest --runInBand",
-    "lint": "ng lint"
+    "test:ci": "jest --runInBand"
   },
   "keywords": ["angular", "angular module", "sanji", "core"],
   "private": true,
