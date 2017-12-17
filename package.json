@@ -1,6 +1,6 @@
 {
   "name": "@sanji/ngx-core-ui",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "scripts": {
     "commitmsg": "validate-commit-msg",
     "commit": "git-cz",
@@ -14,9 +14,15 @@
     "build": "ng-packagr -p ng-package.json",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:ci": "jest --runInBand"
+    "test:ci": "jest --runInBand",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "keywords": ["angular", "angular module", "sanji", "core"],
+  "keywords": [
+    "angular",
+    "angular module",
+    "sanji",
+    "core"
+  ],
   "private": true,
   "repository": {
     "type": "git",
@@ -48,7 +54,12 @@
       "__TRANSFORM_HTML__": true
     },
     "setupTestFrameworkScriptFile": "<rootDir>/lib/src/jest.ts",
-    "testPathIgnorePatterns": ["/node_modules/", "jest.ts", "jest-global-mocks.ts", "package.json"]
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "jest.ts",
+      "jest-global-mocks.ts",
+      "package.json"
+    ]
   },
   "dependencies": {
     "@angular/animations": "^5.1.0",
@@ -95,6 +106,7 @@
     "ts-node": "~4.0.2",
     "tslint": "~5.8.0",
     "typescript": "~2.4.2",
-    "validate-commit-msg": "^2.14.0"
+    "validate-commit-msg": "^2.14.0",
+    "semantic-release": "^8.2.0"
   }
 }
