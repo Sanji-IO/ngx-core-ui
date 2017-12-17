@@ -94,7 +94,7 @@
     "ng-packagr": "^2.0.0-rc.7",
     "ts-node": "~4.0.2",
     "tslint": "~5.8.0",
-    "typescript": "~2.4.2",
+    "typescript": "~2.6.2",
     "validate-commit-msg": "^2.14.0"
   }
 }
