@@ -1,6 +1,10 @@
 {
   "name": "@sanji/ngx-core-ui",
   "version": "0.0.0-development",
+  "main": "./bundles/sanji-io-ngx-core-ui.umd.js",
+  "module": "./esm5/sanji-io-ngx-core-ui.js",
+  "es2015": "./esm2015/sanji-io-ngx-core-ui.js",
+  "typings": "./sanji-io-ngx-core-ui.d.ts",
   "scripts": {
     "commitmsg": "validate-commit-msg",
     "commit": "git-cz",
@@ -90,15 +94,16 @@
     "@types/stacktrace-js": "^0.0.32",
     "codelyzer": "^4.0.2",
     "commitizen": "^2.9.6",
+    "cpx": "^1.5.0",
     "cz-conventional-changelog": "^2.1.0",
     "husky": "^0.14.3",
     "jest": "^21.2.1",
     "jest-preset-angular": "^4.0.2",
     "ng-packagr": "^2.0.0-rc.7",
+    "semantic-release": "^8.2.0",
     "ts-node": "~4.0.2",
     "tslint": "~5.8.0",
     "typescript": "~2.4.2",
-    "validate-commit-msg": "^2.14.0",
-    "semantic-release": "^8.2.0"
+    "validate-commit-msg": "^2.14.0"
   }
 }
