@@ -5,7 +5,29 @@
   "lib": {
     "entryFile": "lib/src/public_api.ts",
     "externals": {
-      "stacktrace-js": "StackTrace"
+      "@angular/animations": "ng.animations",
+      "@angular/cdk": "ng.cdk",
+      "@angular/core": "ng.core",
+      "@angular/common": "ng.common",
+      "@angular/forms": "ng.forms",
+      "@angular/http": "ng.http",
+      "@angular/material": "ng.material",
+      "@angular/flex-layout": "ng.flexLayout",
+      "@angular/platform-browser": "ng.platformBrowser",
+      "@angular/platform-browser-dynamic": "ng.platformBrowserDynamic",
+      "@angular/router": "ng.router",
+      "@auth0/angular-jwt": "auth.jwt",
+      "@ngrx/effects": "ngrx.effects",
+      "@ngrx/router-store": "ngrx.routerStore",
+      "@ngrx/store": "ngrx.store",
+      "core-js": "corejs",
+      "hammerjs": "hammerjs",
+      "ngx-permissions": "ngx.permissions",
+      "ngx-toastr": "ngx.toastr",
+      "ngx-webstorage": "ngx.webstorage",
+      "rxjs": "Rx.Observable.prototype",
+      "stacktrace-js": "StackTrace",
+      "zone.js": "zonejs"
     }
   }
 }
