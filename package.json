@@ -12,10 +12,12 @@
     "lint": "tslint --project lib/src/tsconfig.es5.json",
     "start": "ng serve",
     "build": "ng-packagr -p ng-package.json",
+    "postbuild": "node scripts/postbuild.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "prepublish-lib": "node scripts/prepublish.js",
+    "semantic-release": "semantic-release pre && npm run prepublish-lib && npm publish dist && semantic-release post"
   },
   "keywords": ["angular", "angular module", "sanji", "core"],
   "private": true,
