@@ -9,7 +9,7 @@
     "docs:serve": "npm run docs:build -- -s",
     "docs:watch": "npm run docs:build -- -s -w",
     "ng": "ng",
-    "lint": "tslint --project lib/src/tsconfig.es5.json lib/src/**/*.ts",
+    "lint": "tslint --project lib/src/tsconfig.es5.json",
     "start": "ng serve",
     "build": "ng-packagr -p ng-package.json",
     "test": "jest",
@@ -17,12 +17,7 @@
     "test:ci": "jest --runInBand",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
-  "keywords": [
-    "angular",
-    "angular module",
-    "sanji",
-    "core"
-  ],
+  "keywords": ["angular", "angular module", "sanji", "core"],
   "private": true,
   "repository": {
     "type": "git",
@@ -54,12 +49,7 @@
       "__TRANSFORM_HTML__": true
     },
     "setupTestFrameworkScriptFile": "<rootDir>/lib/src/jest.ts",
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "jest.ts",
-      "jest-global-mocks.ts",
-      "package.json"
-    ]
+    "testPathIgnorePatterns": ["/node_modules/", "jest.ts", "jest-global-mocks.ts", "package.json"]
   },
   "dependencies": {
     "@angular/animations": "^5.1.0",
