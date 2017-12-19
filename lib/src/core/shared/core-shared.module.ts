@@ -9,12 +9,13 @@ import { Session } from '../models/session';
 const PRE_FIX = 'sj';
 
 export function jwtOptionsFactory(localStorageService: LocalStorageService) {
-  return {
+  const obj = {
     tokenGetter: () => {
       const sessionData = localStorageService.retrieve('session');
       return sessionData.token;
     }
   };
+  return obj;
 }
 
 @NgModule({
